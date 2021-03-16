@@ -1,4 +1,3 @@
-const apiKEY = "52935d346fe24d9f97c12c83a9395377";
 const apiCurrencies = "https://openexchangerates.org/api/currencies.json";
 
 let selectFrom = document.getElementById("currency-from");
@@ -20,7 +19,7 @@ axios.get(apiCurrencies).then(function (response) {
 
 function calculate(event) {
     event.preventDefault();
-    let key = "6acafc888400a003fac2c712";
+    let key = config.KEY;
     let quantity = document.getElementById("value").value;
     let apiURL = `https://v6.exchangerate-api.com/v6/${key}/pair/${selectFrom.value}/${selectTo.value}/${quantity}`;
     axios.get(apiURL).then(function (response) {
