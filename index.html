@@ -5,21 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Currency Converter</title>
   </head>
 
   <body>
-    <h1>Currency Converter</h1>
-    <form action="GET" id="form-currency">
-      <input type="text" name="number" id="value" />
-      <label for="from">From</label>
-      <select name="from" id="currency-from"></select>
-      <label for="to">To</label>
-      <select name="to" id="currency-to"></select>
-      <input type="submit" value="calculate" class="send-btn" />
-    </form>
-    <h2 id="result"></h2>
+    <div class="container">
+      <h1>Currency Converter</h1>
+      <form action="GET" id="form-currency">
+        <input type="number" name="number" id="value" placeholder="value" />
+        <label for="from">From</label>
+        <select name="from" id="currency-from"></select>
+        <label for="to">To</label>
+        <select name="to" id="currency-to"></select>
+        <input type="submit" value="Calculate" class="send-btn" />
+      </form>
+      <h2 id="result"></h2>
+    </div>
     <script src="app.js"></script>
     <script type="text/javascript" src="config.js"></script>
   </body>

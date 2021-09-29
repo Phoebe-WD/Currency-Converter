@@ -1,7 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Indie Flower',
+        cursive;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    background-color: plum;
+    width: 500px;
+    height: 300px;
+    border-radius: 25px;
+    border: 1px solid #fff;
+    outline: #333 solid 1px;
+}
+
+.container h1 {
+    color: #fff;
+}
+
+#form-currency {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+
+#form-currency label {
+    font-weight: 700;
+}
+
 .send-btn {
+    width: 80px;
+    font-family: 'Indie Flower',
+        cursive;
     background-color: blueviolet;
     border: none;
     color: white;
-    padding: 10px;
+    padding: 5px;
     border-radius: 15px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#value {
+    width: 100px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid blueviolet;
+}
+
+#currency-from,
+#currency-to {
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid blueviolet;
 }
